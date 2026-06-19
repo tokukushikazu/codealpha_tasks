@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Image Gallery</h1>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+        <button onclick="filterImages('all')">All</button>
+        <button onclick="filterImages('Wallpaper')">Wallpaper</button>
+        <button onclick="filterImages('Anime')">Anime</button>
+        <button onclick="filterImages('Rides')">Rides</button>
+        <button onclick="filterImages('Tech')">Tech</button>
+        <button onclick="filterImages('Art')">Art</button>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery">
+
+        <div class="image-box Wallpaper">
+            <img src="images/wallpaper.jpeg" alt="Wallpaper">
+        </div>
+
+        <div class="image-box Anime">
+            <img src="images/Berserk.jpg" alt="Anime">
+        </div>
+
+        <div class="image-box Rides">
+            <img src="images/bike.jpg" alt="Rides">
+        </div>
+        <div class="image-box Wallpaper">
+            <img src="images/carposter.jpg" alt="Wallpaper">
+        </div>
+
+         
+        <div class="image-box Tech">
+            <img src="images/computer.jpg" alt="Tech">
+        </div>
+        <div class="image-box Rides">
+            <img src="images/porsche.jpg" alt="Rides">
+        </div>
+         <div class="image-box Anime">
+            <img src="images/gundam1.jpeg" alt="Anime">
+        </div>
+        <div class="image-box Art">
+            <img src="images/Drawing1.jpg" alt="Art">
+        </div>
+         <div class="image-box Tech">
+            <img src="images/BluePrint Gundam.jpg" alt="Tech">
+        </div>
+         <div class="image-box Anime">
+            <img src="images/B&W.jpg" alt="Anime">
+        </div>
+        <div class="image-box Art">
+            <img src="images/krishna.jpeg" alt="Art">
+        </div>
+        <div class="image-box Anime">
+            <img src="images/RXgundam.jpeg" alt="Anime">
+        </div>
+
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+
+        <span class="close">&times;</span>
+
+        <button class="prev">&#10094;</button>
+
+        <img id="lightbox-img" src="" alt="">
+
+        <button class="next">&#10095;</button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
